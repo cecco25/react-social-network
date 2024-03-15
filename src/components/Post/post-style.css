@@ -1,7 +1,7 @@
 .post-bg {
     background-color: #2D2D2D;
     padding: 20px;
-    width: 80dvw;
+    width: 90dvw;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@
     gap: 10px;
     padding: 5px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .user-info img {
@@ -28,7 +29,7 @@
     padding: 10px;
     border-radius: 5px;
     height: 120px;
-    font-size: 14px;
+    font-size: 16px;
     flex-wrap: wrap;
     overflow-y: auto;
 }
