@@ -14,8 +14,12 @@ export default function Post() {
                 </p>
             </div>
             <div className='post-actions'>
-                <button>Mi Piace</button>
-                <button>Commenta</button>
+                <button id='like'>
+                    <Image src={"/assets/mi-piace.png"} alt='Mi Piace' width={40} height={40} />
+                </button>
+                <button id='comment'>
+                    <Image src={"/assets/comment.png"} alt='Commenta' width={40} height={40} />
+                </button>
             </div>
         </div>
     );
