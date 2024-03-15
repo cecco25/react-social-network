@@ -9,6 +9,7 @@
     place-items: center;
     gap: 50px;
     padding: 10px;
+    overflow-x: auto;
 }
 
 .nav {
