@@ -43,9 +43,9 @@ export default function Home() {
         ))}
 
       </div>
-      {/* <div className={styles.nav}>
+      <div className={styles.nav}>
         <Navbar />
-      </div> */}
+      </div>
     </main>
   );
 }
