@@ -1,9 +1,9 @@
 import Post from "@/components/Post/Post";
-import "./page.module.css"
+import styles from "./page.module.css"
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <Post />
     </main>
   );
