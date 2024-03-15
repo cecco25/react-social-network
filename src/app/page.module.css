@@ -1,4 +1,15 @@
 .main {
     display: grid;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.post {
+    display: grid;
     place-items: center;
+}
+
+.nav {
+    display: grid;
+    align-items: end;
 }
