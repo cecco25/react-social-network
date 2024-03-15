@@ -43,5 +43,14 @@
 }
 
 .post-actions button {
+    padding: 5px;
     cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.post-actions #like {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

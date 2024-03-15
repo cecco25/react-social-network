@@ -2,8 +2,16 @@
 
 import './post-style.css';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Post({ username, imagePath, text }) {
+
+    const [likes, setLikes] = useState(0);
+
+    function handleClick() {
+        likes > 0 ? setLikes(likes - 1) : setLikes(likes + 1)
+    }
+
     return (
         <div className='post-bg'>
             <div className='user-info'>
@@ -20,8 +28,9 @@ export default function Post({ username, imagePath, text }) {
                 </p>
             </div>
             <div className='post-actions'>
-                <button id='like'>
+                <button id='like' onClick={handleClick}>
                     <Image src={"/assets/mi-piace.png"} alt='Mi Piace' width={40} height={40} />
+                    <label>{likes}</label>
                 </button>
                 <button id='comment'>
                     <Image src={"/assets/comment.png"} alt='Commenta' width={40} height={40} />
