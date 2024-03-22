@@ -3,8 +3,3 @@
     width: 100dvw;
     height: 100dvh;
 }
-
-.navbar {
-    display: grid;
-    align-items: end;
-}

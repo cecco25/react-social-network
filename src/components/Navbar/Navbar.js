@@ -16,7 +16,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className='nav'>
+        <nav className='nav'>
             <div className='home'>
                 <Link href={"/"}>
                     <Image src={changeIcon(usePathname(), "home")} alt='Home' width={40} height={40} />
@@ -29,6 +29,6 @@ export default function Navbar() {
                     Notifiche
                 </Link>
             </div>
-        </div>
+        </nav>
     );
 }

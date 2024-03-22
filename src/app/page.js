@@ -44,9 +44,7 @@ export default function Home() {
 
       </div>
 
-      <div className={styles.nav}>
-        <Navbar />
-      </div>
+      <Navbar />
 
     </main>
   );
