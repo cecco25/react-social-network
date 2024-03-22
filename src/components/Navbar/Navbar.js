@@ -1,20 +1,33 @@
+"use client"
+
 import './navbar-style.css';
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+
+    function changeIcon(pathName, iconType) {
+        if (iconType == "home") {
+            return pathName == "/" ? "/assets/home-filled.svg" : "/assets/home.svg"
+        } else if (iconType == "notifications") {
+            return pathName == "/notifications" ? "/assets/notifica-filled.png" : "/assets/notifica.png"
+        }
+    }
+
     return (
         <div className='nav'>
             <div className='home'>
-                <button>
-                    <Image src={"/assets/home.png"} alt='Home' width={40} height={40}></Image>
+                <Link href={"/"}>
+                    <Image src={changeIcon(usePathname(), "home")} alt='Home' width={40} height={40} />
                     Home
-                </button>
+                </Link>
             </div>
             <div className='notification'>
-                <button>
-                    <Image src={"/assets/notifica.png"} alt='Home' width={40} height={40}></Image>
+                <Link href={"/notifications"}>
+                    <Image src={changeIcon(usePathname(), "notifications")} alt='Home' width={40} height={40} />
                     Notifiche
-                </button>
+                </Link>
             </div>
         </div>
     );
