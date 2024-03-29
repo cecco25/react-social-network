@@ -29,11 +29,11 @@ export default function Post({ username, imagePath, text }) {
             </div>
             <div className='post-actions'>
                 <button id='like' onClick={handleClick}>
-                    <Image src={"/assets/mi-piace.png"} alt='Mi Piace' width={40} height={40} />
+                    <Image src={"/assets/like.svg"} alt='Mi Piace' width={36} height={36} />
                     <label>{likes}</label>
                 </button>
                 <button id='comment'>
-                    <Image src={"/assets/comment.png"} alt='Commenta' width={40} height={40} />
+                    <Image src={"/assets/comment.svg"} alt='Commenta' width={36} height={36} />
                 </button>
             </div>
         </div>
