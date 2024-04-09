@@ -1,7 +1,7 @@
 .main {
     display: grid;
     width: 100dvw;
-    height: 100dvh;
+    overflow-y: auto;
 }
 
 .post {
@@ -9,7 +9,6 @@
     place-items: center;
     gap: 50px;
     padding: 10px;
-    overflow-x: auto;
 }
 
 .nav {

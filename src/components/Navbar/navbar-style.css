@@ -8,8 +8,8 @@
     height: 70px;
     align-items: center;
     width: 100%;
-    position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 
 .nav a {
