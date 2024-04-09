@@ -98,6 +98,7 @@ a {
   height: 100dvh;
   display: grid;
   grid-template-rows: 1fr min-content;
+  gap: 2px;
 }
 
 img,
