@@ -7,7 +7,7 @@
 .post {
     display: grid;
     place-items: center;
-    gap: 50px;
+    gap: 20px;
     padding: 10px;
 }
 
