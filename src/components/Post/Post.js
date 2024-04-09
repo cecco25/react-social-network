@@ -9,7 +9,11 @@ export default function Post({ username, imagePath, text }) {
     const [likes, setLikes] = useState(0);
 
     function handleClick() {
-        (likes > 0) ? setLikes(likes - 1) : setLikes(likes + 1)
+        if (likes > 0) {
+            setLikes(likes - 1)
+        } else {
+            setLikes(likes + 1)
+        }
     }
 
     return (
@@ -29,7 +33,10 @@ export default function Post({ username, imagePath, text }) {
             </div>
             <div className='post-actions'>
                 <button id='like' onClick={handleClick}>
-                    <Image src={"/assets/like.svg"} alt='Mi Piace' width={32} height={32} draggable="false" />
+                    {(likes > 0) ?
+                        <Image src={"/assets/like-filled.svg"} alt='Mi Piace' width={32} height={32} draggable="false" /> :
+                        <Image src={"/assets/like.svg"} alt='Mi Piace' width={32} height={32} draggable="false" />
+                    }
                     <label>{likes}</label>
                 </button>
                 <button id='comment'>
