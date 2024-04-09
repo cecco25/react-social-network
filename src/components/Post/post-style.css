@@ -28,7 +28,7 @@
     background-color: #495057;
     padding: 10px;
     border-radius: 5px;
-    height: 120px;
+    max-height: 200px;
     font-size: 14px;
     overflow-y: auto;
 }
