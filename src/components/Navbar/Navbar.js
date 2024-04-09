@@ -19,13 +19,13 @@ export default function Navbar() {
         <nav className='nav'>
             <div className='home'>
                 <Link href={"/"}>
-                    <Image src={changeIcon(usePathname(), "home")} alt='Home' width={40} height={40} />
+                    <Image src={changeIcon(usePathname(), "home")} alt='Home' width={32} height={32} draggable="false" />
                     Home
                 </Link>
             </div>
             <div className='notification'>
                 <Link href={"/notifications"}>
-                    <Image src={changeIcon(usePathname(), "notifications")} alt='Home' width={40} height={40} />
+                    <Image src={changeIcon(usePathname(), "notifications")} alt='Home' width={32} height={32} draggable="false" />
                     Notifiche
                 </Link>
             </div>

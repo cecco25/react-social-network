@@ -15,7 +15,7 @@ export default function Post({ username, imagePath, text }) {
     return (
         <div className='post-bg'>
             <div className='user-info'>
-                <Image src={imagePath} width={40} height={40} alt='user pic'
+                <Image src={imagePath} width={48} height={48} alt='user pic' draggable="false"
                     onError={(e) => {
                         e.currentTarget.src = "/assets/user-pic.jpeg";
                         e.currentTarget.onerror = null;
@@ -29,11 +29,11 @@ export default function Post({ username, imagePath, text }) {
             </div>
             <div className='post-actions'>
                 <button id='like' onClick={handleClick}>
-                    <Image src={"/assets/like.svg"} alt='Mi Piace' width={36} height={36} />
+                    <Image src={"/assets/like.svg"} alt='Mi Piace' width={32} height={32} draggable="false" />
                     <label>{likes}</label>
                 </button>
                 <button id='comment'>
-                    <Image src={"/assets/comment.svg"} alt='Commenta' width={36} height={36} />
+                    <Image src={"/assets/comment.svg"} alt='Commenta' width={32} height={32} draggable="false" />
                 </button>
             </div>
         </div>

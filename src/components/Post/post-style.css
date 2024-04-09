@@ -1,5 +1,5 @@
 .post-bg {
-    background-color: #2D2D2D;
+    background-color: #212529;
     padding: 20px;
     width: 90dvw;
     border-radius: 12px;
@@ -9,7 +9,7 @@
 }
 
 .user-info {
-    background-color: #606060;
+    background-color: #343A40;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -25,12 +25,11 @@
 }
 
 .post-text {
-    background-color: #606060;
+    background-color: #495057;
     padding: 10px;
     border-radius: 5px;
     height: 120px;
-    font-size: 16px;
-    flex-wrap: wrap;
+    font-size: 14px;
     overflow-y: auto;
 }
 
