@@ -9,7 +9,7 @@ export default function Post({ username, imagePath, text }) {
     const [likes, setLikes] = useState(0);
 
     function handleClick() {
-        likes > 0 ? setLikes(likes - 1) : setLikes(likes + 1)
+        (likes > 0) ? setLikes(likes - 1) : setLikes(likes + 1)
     }
 
     return (
